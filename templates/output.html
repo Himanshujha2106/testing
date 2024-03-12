@@ -110,7 +110,7 @@
                             </div>
                         </div> <!-- s-intro__content-media -->
 
-                        <form action="run" method="POST" enctype="multipart/form-data">
+                        <form action="run" method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         <input type="file" name="csv_file" accept=".csv" required>
                         <button type="submit" class="btn btn--primary">Upload CSV</button>
