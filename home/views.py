@@ -6,20 +6,17 @@ from sklearn.cluster import KMeans
 import csv
 import numpy as np
 import os
-from django.views.decorators.csrf import csrf_exempt
-
-
 
 # Create your models here.
-@csrf_exempt
+
 def home(request):
     return render(request,'index.html')
-@csrf_exempt
+
 def out(request):
     return render(request,'output.html')
 
 
-@csrf_exempt   
+    
 def run(request):
     
     
